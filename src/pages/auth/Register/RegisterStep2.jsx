@@ -5,13 +5,13 @@ import { useRegister2 } from "../../../core/hooks/auth/register";
 
 const RegisterStep2 = () => {
   const email = useAuthStore((state) => state.email);
-  const { regMutate, pending } = useRegister2();
+  const { regMutation, pending } = useRegister2();
 
   return (
     <Formik
       initialValues={{ verificationCode: "" }}
       onSubmit={(value) => {
-        regMutate({ ...value, email: email });
+        regMutation({ ...value, email: email });
       }}
     >
       <Form className="flex flex-col items-center gap-8 justify-between px-4 py-3 ">

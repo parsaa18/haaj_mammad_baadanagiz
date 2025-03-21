@@ -1,7 +1,8 @@
 import axios from "axios";
 import { getItem } from "../storage/index.storage";
 
-const baseURL = "https://zuperdevtest.liara.run/";
+const baseURL =
+  "https://zuperdev-blog-and-sensordata-tas-production.up.railway.app/";
 
 const instance = axios.create({
   baseURL: baseURL,

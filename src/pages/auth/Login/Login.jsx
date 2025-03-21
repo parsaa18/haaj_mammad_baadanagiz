@@ -18,8 +18,7 @@ const Login = () => {
       }}
     >
       <Form className="flex flex-col items-center gap-8 justify-between px-4 py-3 ">
-        <h1 className="text-white text-2xl font-black">Register</h1>
-        <p className="text-white">We've sent you an email containing a code.</p>
+        <h1 className="text-white text-2xl font-black">Login</h1>
         <div className="flex flex-col gap-8">
           <InputField
             type="text"
